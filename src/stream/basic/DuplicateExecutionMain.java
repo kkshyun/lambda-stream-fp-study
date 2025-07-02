@@ -9,7 +9,7 @@ public class DuplicateExecutionMain {
         Stream<Integer> stream = Stream.of(1,2,3);
         stream.forEach(System.out::println);
 
-        // 오류 메시지 - 스트림 중복 실행 안됨
+        // 오류 메시지 IllegalStateException - 스트림 중복 실행 안됨
         // stream.forEach(System.out::println);
 
         // 대안 : 대상 리스트를 스트림으로 새로 생성해서 사용
